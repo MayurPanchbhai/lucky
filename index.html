@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cousin's Video Portfolio</title>
+    <title>I'm Lucky</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Add some smooth transitions */
@@ -36,19 +36,40 @@
         .social-icon:hover {
             transform: scale(1.2);
         }
+
+        /* Dark theme adjustments */
+        .dark-theme {
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+
+        .dark-theme a {
+            color: #cbd5e0; /* Light links */
+        }
+
+        .dark-theme a:hover {
+            color: #63b3ed; /* Highlight color on hover */
+        }
+
+        .dark-theme .bg-gradient {
+            background: linear-gradient(135deg, #2d3748, #4a5568);
+        }
+
+        .dark-theme .bg-dark {
+            background-color: #2d3748;
+        }
     </style>
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-900 font-sans dark-theme">
 
     <!-- Header Section -->
-    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-10">
+    <header class="bg-gradient to-r from-gray-800 to-gray-900 text-white py-10">
         <div class="container mx-auto flex justify-between items-center px-4">
             <!-- Left Side (Text) -->
             <div class="text-left w-full md:w-1/2 fadeIn">
-                <h1 class="text-5xl font-bold mb-4">Welcome to My Video Portfolio</h1>
-                <p class="text-xl mb-6">I'm a passionate video editor. Check out my work!</p>
-                <a href="#videos" class="bg-yellow-500 text-gray-800 py-3 px-6 rounded-lg text-xl hover:bg-yellow-600 transition duration-300">View My Videos</a>
+                <h1 class="text-5xl font-bold mb-4">Hi, I'm Lucky</h1>
+                <p class="text-xl mb-6">I'm passionate about video editing.</p>
             </div>
             <!-- Right Side (Image) -->
             <div class="w-full md:w-1/2 fadeIn mt-8 md:mt-0">
@@ -58,48 +79,48 @@
     </header>
 
     <!-- Social Media Links -->
-    <div class="flex justify-center gap-6 py-6 bg-white shadow-md">
-        <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon text-gray-800 text-3xl hover:text-blue-500">
+    <div class="flex justify-center gap-6 py-6 bg-gray-800 shadow-md">
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon text-gray-400 text-3xl hover:text-blue-500">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/c/yourchannel" target="_blank" class="social-icon text-gray-800 text-3xl hover:text-red-600">
+        <a href="https://www.youtube.com/c/yourchannel" target="_blank" class="social-icon text-gray-400 text-3xl hover:text-red-600">
             <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://wa.me/yourphone" target="_blank" class="social-icon text-gray-800 text-3xl hover:text-green-500">
+        <a href="https://wa.me/yourphone" target="_blank" class="social-icon text-gray-400 text-3xl hover:text-green-500">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
     <!-- About Me Section -->
-    <section id="about" class="py-16 px-4 bg-white text-center">
+    <section id="about" class="py-16 px-4 bg-gray-800 text-center">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 fadeIn">About Me</h2>
-            <p class="text-lg text-gray-700 fadeIn">
-                Hi! I'm a video editor with a passion for bringing stories to life. Whether it's through music videos,
-                short films, or social media content, I love working with my clients to make their visions a reality.
+            <h2 class="text-3xl font-semibold text-gray-200 mb-6 fadeIn">About Me</h2>
+            <p class="text-lg text-gray-400 fadeIn">Hi, I'm Lucky — a passionate video editor with over 2 years of experience bringing stories to life through the power of editing. Whether it's music videos, short films, or social media content, I thrive on turning raw footage into visually engaging and emotionally impactful stories.
+                I’ve worked with a range of clients and creators, helping shape their ideas into polished visuals using precise cuts, smooth transitions, and thoughtful pacing. From color correction and sound design to storytelling and rhythm, I focus on every detail to make sure each video connects with its audience.
+                Driven by creativity and collaboration, I love working closely with clients to understand their vision and deliver content that exceeds expectations. If you're looking for someone who’s dedicated, creative, and easy to work with — let’s make something amazing together.
             </p>
         </div>
     </section>
 
     <!-- Video Section -->
-    <section id="videos" class="py-16 px-4 bg-gray-50">
+    <section id="videos" class="py-16 px-4 bg-gray-900">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-semibold text-gray-800 mb-6 fadeIn">My Work</h2>
+            <h2 class="text-3xl font-semibold text-gray-200 mb-6 fadeIn">My Work</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Video 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+                <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden hover-scale">
                     <iframe class="w-full h-64" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <!-- Video 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+                <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden hover-scale">
                     <iframe class="w-full h-64" src="https://www.youtube.com/embed/exampleVideoID2" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
                 <!-- Video 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+                <div class="bg-gray-800 shadow-lg rounded-lg overflow-hidden hover-scale">
                     <iframe class="w-full h-64" src="https://www.youtube.com/embed/exampleVideoID3" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -108,8 +129,30 @@
         </div>
     </section>
 
+    <!-- Contact Details Section (Above Footer) -->
+    <section id="contact" class="bg-gray-800 py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-200 mb-6 fadeIn">Contact Details</h2>
+            <div class="flex justify-center gap-8 mb-6">
+                <!-- Email -->
+                <div class="text-xl text-gray-400">
+                    <i class="fas fa-envelope text-blue-600 text-3xl"></i>
+                    <p>Email: <a href="mailto:luckymail@example.com" class="text-blue-600 hover:underline">luckymail@example.com</a></p>
+                </div>
+                <!-- Phone -->
+                <div class="text-xl text-gray-400">
+                    <i class="fas fa-phone-alt text-green-600 text-3xl"></i>
+                    <p>Phone: <a href="tel:+1234567890" class="text-green-600 hover:underline">+1 (234) 567-890</a></p>
+                </div>
+            </div>
+            <div>
+                <p class="text-xl text-gray-400">Feel free to reach out for collaborations or project inquiries!</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer Section -->
-    <footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 text-center">
+    <footer class="bg-gradient to-r from-gray-800 to-gray-900 text-white py-6 text-center">
         <p class="text-lg">Made with ❤️ by [Your Cousin's Name]</p>
         <p class="text-sm">All Rights Reserved</p>
     </footer>
