@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cousin's Video Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Add some smooth transitions */
+        .fadeIn {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Hover effect on images */
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        /* Floating social icons */
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-10">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4 fadeIn">Welcome to My Video Portfolio</h1>
+            <p class="text-xl mb-6 fadeIn">I'm a passionate video editor. Check out my work!</p>
+            <div class="fadeIn">
+                <a href="#videos" class="bg-yellow-500 text-gray-800 py-3 px-6 rounded-lg text-xl hover:bg-yellow-600 transition duration-300">View My Videos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Social Media Links -->
+    <div class="flex justify-center gap-6 py-6 bg-white shadow-md">
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="social-icon text-gray-800 text-3xl hover:text-blue-500">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/c/yourchannel" target="_blank" class="social-icon text-gray-800 text-3xl hover:text-red-600">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://wa.me/yourphone" target="_blank" class="social-icon text-gray-800 text-3xl hover:text-green-500">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 px-4 bg-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 fadeIn">About Me</h2>
+            <p class="text-lg text-gray-700 fadeIn">
+                Hi! I'm a video editor with a passion for bringing stories to life. Whether it's through music videos,
+                short films, or social media content, I love working with my clients to make their visions a reality.
+            </p>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="videos" class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 fadeIn">My Work</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/exampleVideoID1" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- Video 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/exampleVideoID2" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <!-- Video 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden hover-scale">
+                    <iframe class="w-full h-64" src="https://www.youtube.com/embed/exampleVideoID3" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 text-center">
+        <p class="text-lg">Made with ❤️ by [Your Cousin's Name]</p>
+        <p class="text-sm">All Rights Reserved</p>
+    </footer>
+
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
